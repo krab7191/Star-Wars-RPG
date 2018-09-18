@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../../../../bootstrap files/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- <link rel="stylesheet" href="../../../../font-awesome/font-awesome.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Star Wars RPG</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="jumbotron jumbotron-fluid text-center">
+            Star Wars RPG
+        </h1>
+    </header>
+    <div id="content">
+            <p class="text-center" id="choosy">
+                    Pick your character:
+                </p>
+        <div class="row" id="options">
+            <div id="mace" class="mx-auto col-md-3 char-box char-box-good">
+                <p class="text-center">Mace Windu</p>
+                <img src="assets/images/mace.jpeg">
+                <p class="text-center" id="mace-hp"></p>
+            </div>
+            <div id="quigon" class="mx-auto col-md-3 char-box char-box-good">
+                <p class="text-center">Qui-Gon Jinn</p>
+                <img src="assets/images/Qui-Gon.jpeg">
+                <p class="text-center" id="quigon-hp"></p>
+            </div>
+            <div id="dook" class="mx-auto col-md-3 char-box char-box-evil">
+                <p class="text-center">Count Dooku</p>
+                <img src="assets/images/dook.jpeg">
+                <p class="text-center" id="dook-hp"></p>
+            </div>
+            <div id="maul" class="mx-auto col-md-3 char-box char-box-evil">
+                <p class="text-center">Darth Maul</p>
+                <img src="assets/images/maul.jpeg">
+                <p class="text-center" id="maul-hp"></p>
+            </div>
+        </div>
+        <p class="text-center">
+            Enemies:
+        </p>
+        <div class="row empty" id="enemies">
+
+        </div>
+        <p class="text-center">
+            Your Character:
+        </p>
+        <div class="row your-character empty" id="your-character">
+        </div>
+        <div class="row fight">
+            <button class="btn btn-danger mx-auto" id="fight">Fight</button>
+        </div>
+        <p class="text-center">
+            Defender:
+        </p>
+        <div class="row empty" id="defender">
+
+        </div>
+    </div>
+    <div id="info">
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- <script src="../../../../jquery/jquery-3.3.1.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- <script src="../../../../bootstrap files/bootstrap.min.js"></script> -->
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

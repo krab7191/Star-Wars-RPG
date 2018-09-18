@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'starjout';
+    src: url('../fonts/starjout/Starjout.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'starjedi';
+    src: url('../fonts/starjedi/Starjedi.ttf') format('truetype');
+}
+
+body {
+    background-image: url(../images/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    border-bottom: 2px solid black;
+    font-family: 'starjout';
+}
+/* Smaller jumbotron */
+.jumbotron {
+    height: 100px;
+    line-height: 0px;
+}
+
+#content {
+    font-family: "starjedi";
+    margin: -32px auto 80px auto;
+    width: 95%;
+    padding: 0 15px;
+}
+.row {
+    margin-top: 15px;
+}
+.char-box:hover {
+    cursor: pointer;
+}
+
+#content img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.char-box {
+    margin: 0 15px;
+}
+
+.char-box-good {
+    border: 2px solid green;
+    background: rgba(0, 128, 0, .3);
+}
+
+.char-box-evil {
+    border: 2px solid red;
+    background: rgba(128, 0, 0, .3);
+}
+#info {
+    border-top: 2px solid black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 65px;
+    padding: 5px;
+    background-color: white;
+    overflow-y: auto;
+}
+#your-character, #enemies, #defender {
+    background: rgba(50, 50, 50, .2);
+}
